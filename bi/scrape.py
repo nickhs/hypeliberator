@@ -57,12 +57,12 @@ class Scraper():
                 song.artist = track['artist']
                 song.url = track['stream_url_raw']
                 db.session.add(song)
-                db.session.commit()
             else:
                 song.downloaded += 1
                 song.url = track['stream_url_raw']
                 db.session.add(song)
-                db.session.commit()
+
+            db.session.commit()
 
             self.songs.append(song)
             count += 1
