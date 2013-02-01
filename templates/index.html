@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hype Liberator</title>
+    <link href="/static/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  <div id="container">
+    <header>
+      <h1 class="top">We <span class="red">♥</span> Hype Machine</h1>
+      <h1><em>but</em></h1>
+      <h1>We also <span class="red">♥</span> MP3s</h1>
+    </header>
+
+    <section class="username">
+      <input id="username" type="text" placeholder="your hypem username" autofocus="autofocus" autocomplete="off">
+
+      <div class="info">
+        <p>Download all the songs you've hearted</p><p>Enter your Hype Machine username above</p>
+      </div>
+    </section>
+
+    <section class="sidebar" style="display: none">
+      <ul>
+        <li>Get the JSON</li>
+        <li>Get a list of URLs</li>
+        <li>Get a script to download these</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>Built on late nights <span class="subtle">&amp;</span> love <span class="subtle" >// <a href="http://nickhs.com">nickhs</a></span></div>
+    </footer>
+  </div>
+
+  <script type="text/template" id="track-template">
+    <a href="<%= url %>" download="<%= title %>-<%= artist %>.mp3"><p>
+      <%= title %> - <%= artist %>
+    </p></a>
+  </script>
+
+  <script type="text/javascript" src="/static/js/jquery-1.9.0.js"></script>
+  <script type="text/javascript" src="/static/js/json2.js"></script>
+  <script type="text/javascript" src="/static/js/underscore.js"></script>
+  <script type="text/javascript" src="/static/js/backbone.js"></script>
+  <script type="text/javascript" src="/static/js/main.js"></script>
+  </body>
+</html>

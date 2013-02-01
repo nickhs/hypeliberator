@@ -1,0 +1,146 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  font-family: helvetica,sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  min-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 200;
+
+  margin-bottom: 5%;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+h1 em {
+  background: red;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+section {
+  width: 70%;
+  min-width: 375px;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  background: #fff;
+  border: solid 1px #acacac;
+}
+
+section input {
+  font-size: 2em;
+  width: 100%;
+
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+div.info {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2em;
+}
+
+div.info a {
+  text-decoration: none;
+  color: black;
+}
+
+div.info a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+section.sidebar {
+  position: fixed;
+  right: 0;
+  top: 375px;
+  background: #222;
+  color: white;
+
+  min-width: 0;
+  width: 150px;
+  font-weight: 200;
+
+  margin-right: 120px;
+
+  box-shadow: -1px -1px 4px 2px rgba(0, 0, 0, 0.05);
+  border: 0;
+}
+
+section.sidebar ul {
+  padding: 0;
+  margin: 10px;
+}
+
+section.sidebar li {
+  list-style-type: none;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  height: 20px;
+  background: #111;
+  font-weight: 200;
+  color: #ddd;
+  vertical-align: middle;
+}
+
+footer div {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+.subtle {
+  color: #888;
+
+}
+
+.subtle a {
+  color: #888;
+  text-decoration: none;
+
+  transition: all ease-out 1s;
+  -webkit-transition: all ease-out 1s;
+  -moz-transition: all ease-out 1s;
+}
+
+.subtle a:hover {
+  color: white;
+}
+
