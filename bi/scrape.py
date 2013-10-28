@@ -11,8 +11,8 @@ class Scraper():
         self.session = requests.Session()
 
         self.session.headers.update({
-            'Authorization': 'Basic ZG1lc2c6Zm9vYmFy',
-            'User-Agent': 'UberHype 1.0.9',
+            # 'Authorization': 'Basic ZG1lc2c6Zm9vYmFy',
+            'User-Agent': 'http://hypeliberator.com v1.0',
             'Host': 'api.hypem.com',
             'Accept-Encoding': 'gzip',
             'Proxy-Connection': 'close',
@@ -37,7 +37,16 @@ class Scraper():
 
     def _fetch_data(self, url):
         resp = requests.get(url)
-        data = resp.json
+
+        if not resp.ok:
+            print "Failed to get %s [%s]" % (resp.url, resp.status_code)
+            return False
+
+        try:
+            data = resp.json()
+        except ValueError as e:
+            print e
+            return False
 
         if not data:
             return False
