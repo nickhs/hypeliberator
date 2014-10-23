@@ -10,11 +10,22 @@ def index():
 
 @app.route('/api')
 def api():
+    '''
+    Returns API version - may be changed later
+    '''
     return jsonify({'Version': '0.0.1'})
 
 
 @app.route('/api/grab')
 def grab():
+    '''
+    Main entry point for the JS web application
+    Sends a HTTP GET request with the username param
+    mapped to a hype machine username (such as dmesg).
+
+    Program calls up the scraper to fetch the songs
+    from Hype Machine's web service.
+    '''
     username = request.args.get('username')
 
     if not username:
