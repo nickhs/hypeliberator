@@ -1,16 +1,16 @@
 Hype Liberator
 ===============
 
-Love [Hype Machine]("http://hypem.com")? Want to grab all your hearted songs as MP3's? This does just that.
+Love [Hype Machine](http://hypem.com)? Want to grab all your hearted songs as MP3's? This does just that.
 
-Demo up at [hypeliberator.com]("http://hypeliberator.com"). If you need an example username to query mine is `dmesg`
+Demo up at [hypeliberator.com](http://hypeliberator.com). If you need an example username to query mine is `dmesg`
 
 Built on Python, Flask and Requests in the rear with Backbone and JQuery up front.
 
 The main entry points are the HTTP routes defined in `main.py`
 
-NB: This is no longer in use at [hypeliberator.com]("http://hypeliberator.com") - instead the
-[rewrite in Go is]("http://github.com/nickhs/hypeliberator-go").
+NB: This is no longer in use at [hypeliberator.com](http://hypeliberator.com) - instead the
+[rewrite in Go is](http://github.com/nickhs/hypeliberator-go).
 
 # Deployment
 
